@@ -1,0 +1,17 @@
+.search-bar-div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.search-bar-input {
+  border: none;
+  height: 45%;
+  border-radius: 14px;
+  text-indent: 10px;
+  outline: none;
+}
+
+.search-icon {
+  cursor: pointer;
+}

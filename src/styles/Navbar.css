@@ -1,0 +1,35 @@
+.nav-div {
+  background-color: rgb(238, 180, 73);
+  color: rgb(58, 58, 58);
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo-div {
+  margin-left: 2svw;
+  display: flex;
+  align-items: center;
+}
+
+.nav-text {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.nav-text:hover {
+  color: rgb(238, 238, 238);
+}
+
+.nav-section-div {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search-bar {
+  border: none;
+  height: 65%;
+  border-radius: 14px;
+}

@@ -1,0 +1,7 @@
+.ann-main-div {
+  background-color: rgb(43, 43, 43);
+  color: rgb(221, 221, 221);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
