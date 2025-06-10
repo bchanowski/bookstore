@@ -4,16 +4,23 @@
   font-size: large;
   display: flex;
   justify-content: space-between;
+  height: 8svh;
 }
 
 .nav-logo-div {
   margin-left: 2svw;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo-div:hover {
+  color: rgb(238, 238, 238);
 }
 
 .nav-text {
   cursor: pointer;
+  margin-right: 2svw;
   transition: all 0.5s ease;
 }
 
@@ -24,12 +31,28 @@
 .nav-section-div {
   display: flex;
   width: 60%;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
 }
 
-.search-bar {
-  border: none;
-  height: 65%;
-  border-radius: 14px;
+.nav-icons {
+  display: flex;
+  margin-left: 25px;
+}
+.nav-icon {
+  cursor: pointer;
+  height: 2svw;
+  width: 2svw;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+
+.nav-icon:hover {
+  color: rgb(238, 238, 238);
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(61, 61, 61);
+  height: 5svh;
+  margin-right: 2svw;
 }

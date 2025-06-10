@@ -1,0 +1,35 @@
+.main-slider-div {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-slider-images {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main-slider-buttons {
+  all: unset;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+
+.main-slider-buttons:hover {
+  background-color: rgb(27, 27, 27, 0.2);
+}
+
+.main-slider-buttons > * {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}

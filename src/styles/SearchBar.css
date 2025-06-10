@@ -1,17 +1,32 @@
 .search-bar-div {
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: space-around;
+  height: 45%;
+  background-color: rgb(66, 66, 66);
+  border-radius: 14px;
+  margin-left: 2svw;
 }
 
 .search-bar-input {
   border: none;
-  height: 45%;
+  height: 95%;
   border-radius: 14px;
   text-indent: 10px;
   outline: none;
+  margin-right: 5px;
+  padding-right: 15px;
 }
 
 .search-icon {
+  width: 2svw;
+  height: 2svw;
   cursor: pointer;
+  transition: all 0.5s ease;
+  margin-right: 10px;
+  color: rgb(238, 180, 73);
+}
+
+.search-icon:hover {
+  color: rgb(238, 238, 238);
 }
