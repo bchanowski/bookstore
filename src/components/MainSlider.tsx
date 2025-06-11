@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import "../styles/MainSlider.css";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
+import { FaCircle, FaRegCircle } from "react-icons/fa6";
 
 type Props = {
   imagesUrls: string[];
@@ -8,6 +9,8 @@ type Props = {
 
 const MainSlider = ({ imagesUrls }: Props) => {
   const [imageIndex, setImageIndex] = useState(0);
+  const timerRef = useRef<number | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
   function showLastImage() {
     setImageIndex((index) => {
       if (index === 0) return imagesUrls.length - 1;
@@ -20,9 +23,45 @@ const MainSlider = ({ imagesUrls }: Props) => {
       return index + 1;
     });
   }
+  const startTimer = useCallback(() => {
+    if (timerRef.current) {
+      window.clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+
+    if (!isPaused && imagesUrls.length > 0) {
+      timerRef.current = window.setInterval(() => {
+        setImageIndex((prev) =>
+          prev === imagesUrls.length - 1 ? 0 : prev + 1
+        );
+      }, 5000);
+    }
+  }, [isPaused, imagesUrls.length]);
+
+  useEffect(() => {
+    startTimer();
+
+    return () => {
+      if (timerRef.current) window.clearInterval(timerRef.current);
+    };
+  }, [startTimer]);
+
   return (
-    <div className="main-slider-div">
-      <img src={imagesUrls[imageIndex]} className="main-slider-images" />
+    <div
+      className="main-slider-div"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      <div className="images-div">
+        {imagesUrls.map((url) => (
+          <img
+            src={url}
+            key={url}
+            className="main-slider-images"
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
+        ))}
+      </div>
       <button
         className="main-slider-buttons"
         style={{ left: 0 }}
@@ -37,6 +76,17 @@ const MainSlider = ({ imagesUrls }: Props) => {
       >
         <LiaAngleRightSolid />
       </button>
+      <div className="index-buttons-div">
+        {imagesUrls.map((_, index) => (
+          <button
+            className="index-btns"
+            key={index}
+            onClick={() => setImageIndex(index)}
+          >
+            {index === imageIndex ? <FaCircle /> : <FaRegCircle />}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
