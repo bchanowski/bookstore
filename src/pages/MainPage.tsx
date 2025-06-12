@@ -7,6 +7,7 @@ import photo1 from "../assets/mainslider/slider1.png";
 import photo2 from "../assets/mainslider/slider2.png";
 import photo3 from "../assets/mainslider/slider3.png";
 import photo4 from "../assets/mainslider/slider4.png";
+import fantasyProducts from "../data/FantasyProducts";
 
 const IMAGES = [photo1, photo2, photo3, photo4];
 
@@ -16,9 +17,7 @@ const MainPage = () => {
       <Announcement />
       <Navbar />
       <MainSlider imagesUrls={IMAGES} />
-      <ProductsSlider direction="left" />
-      <ProductsSlider direction="right" />
-      <ProductsSlider direction="left" />
+      <ProductsSlider direction="left" products={fantasyProducts} />
       <Footer />
     </>
   );
