@@ -17,7 +17,7 @@ const MainPage = () => {
       <Announcement />
       <Navbar />
       <MainSlider imagesUrls={IMAGES} />
-      <ProductsSlider direction="left" products={fantasyProducts} />
+      <ProductsSlider header="FANTASY" products={fantasyProducts} />
       <Footer />
     </>
   );

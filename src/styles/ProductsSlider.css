@@ -1,27 +1,92 @@
 .products-slider-div {
-  margin-top: 2svh;
-  margin-bottom: 2svh;
+  margin: 2svh;
+  background-color: rgb(221, 221, 221, 0.5);
+  border-radius: 15px;
+}
+
+.category-div {
+  background-color: rgb(43, 43, 43);
+  color: rgb(221, 221, 221);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.category-text {
+  font-size: x-large;
+}
+
+.products-div {
+  display: flex;
+  position: relative;
 }
 
 .products-images-div {
   display: flex;
   overflow: hidden;
-  height: 400px;
+  height: 350px;
   width: 100%;
 }
 
 .product-image-div {
   width: 100%;
-  height: 80%;
-  margin: 1svh 2svw 1svh 2svw;
-  background-color: rgba(194, 193, 193, 0.2);
+  height: 100%;
   padding: 2svw;
-  border-radius: 15px;
   cursor: pointer;
 }
 
+.product-image-div:hover {
+  background-color: rgb(68, 67, 67, 0.5);
+}
+
 .product-image {
-  width: 10svw;
-  height: 70%;
-  border-radius: 15px;
+  width: 150px;
+  height: 60%;
+  margin: 5px;
+  display: block;
+}
+
+.product-vertical-line {
+  border-left: 0.5px solid rgb(61, 61, 61, 0.2);
+  height: 90%;
+  margin-top: 1svh;
+}
+
+.products-buttons {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 100ms ease-in-out;
+  position: absolute;
+  font-size: x-large;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(221, 221, 221);
+}
+
+.products-buttons:hover {
+  background-color: rgb(68, 67, 67, 0.5);
+}
+
+.showmore-btn {
+  all: unset;
+  text-align: end;
+  background-color: rgb(68, 67, 67, 0.8);
+  color: white;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+  padding: 0.5rem;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  margin-right: 2svw;
+}
+
+.showmore-btn:hover {
+  background-color: rgb(68, 67, 67, 0.2);
 }
