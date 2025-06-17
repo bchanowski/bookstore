@@ -2,6 +2,7 @@ import type { IProduct } from "../types/ProductInterface";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 import "../styles/ProductsSlider.css";
 import { useEffect, useRef, useState } from "react";
+import ProductInfo from "./ProductInfo";
 
 type Props = {
   header: string;
@@ -84,11 +85,7 @@ const ProductsSlider = ({ header, products }: Props) => {
         <div className="products-images-div" ref={sliderRef}>
           {products.map((product) => (
             <>
-              <div className="product-image-div">
-                <img src={product.imageUrl} className="product-image" />
-                <p className="product-text">{product.name}</p>
-                <p className="product-text">{product.price} €</p>
-              </div>
+              <ProductInfo product={product} />
               <div className="product-vertical-line"></div>
             </>
           ))}

@@ -1,0 +1,7 @@
+.footer-div {
+    background-color: rgb(43, 43, 43);
+    color: rgb(221, 221, 221);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+}
