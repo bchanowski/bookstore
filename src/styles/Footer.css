@@ -3,5 +3,25 @@
     color: rgb(221, 221, 221);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 300px;
+}
+
+.footer-data-map-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-info-div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.footer-section > p {
+   margin: 0; 
+   cursor: pointer;
+}
+
+.footer-section > p:hover {
+    color: rgb(221, 221, 221, 0.5);
 }

@@ -1,0 +1,29 @@
+.newsletter-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    color: rgb(43, 43, 43);
+}
+
+.newsletter-input {
+    all: unset;
+    background-color: rgb(43, 43, 43);
+    color: rgb(221, 221, 221);
+    font-size: x-large;
+    padding: 0.25rem;
+}
+
+.newsletter-text {
+    margin-right: 1rem;
+    font-size: x-large;
+}
+
+.newsletter-icon {
+    background-color: rgb(43, 43, 43);
+    color: rgb(221, 221, 221);
+    font-size: x-large;
+    padding: 0.4rem;
+    cursor: pointer;
+}

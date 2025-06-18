@@ -19,8 +19,8 @@
 }
 
 .search-icon {
-  width: 2svw;
-  height: 1.5svw;
+  width: 2.5rem;
+  height: 1.5rem;
   cursor: pointer;
   transition: all 0.5s ease;
   margin-right: 10px;
