@@ -75,13 +75,17 @@ const ProductsSlider = ({ header, products }: Props) => {
         <button className="showmore-btn">Show More {">"}</button>
       </div>
       <div className="products-div">
-        <button
-          className="products-buttons"
-          style={{ left: 0 }}
-          onClick={prevSlide}
-        >
-          <LiaAngleLeftSolid />
-        </button>
+        {currentPosition !== 0 ? (
+          <button
+            className="products-buttons"
+            style={{ left: 0 }}
+            onClick={prevSlide}
+          >
+            <LiaAngleLeftSolid />
+          </button>
+        ) : (
+          <></>
+        )}
         <div className="products-images-div" ref={sliderRef}>
           {products.map((product) => (
             <>
@@ -90,13 +94,17 @@ const ProductsSlider = ({ header, products }: Props) => {
             </>
           ))}
         </div>
-        <button
-          className="products-buttons"
-          style={{ right: 0 }}
-          onClick={nextSlide}
-        >
-          <LiaAngleRightSolid />
-        </button>
+        {currentPosition !== maxScroll ? (
+          <button
+            className="products-buttons"
+            style={{ right: 0 }}
+            onClick={nextSlide}
+          >
+            <LiaAngleRightSolid />
+          </button>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
