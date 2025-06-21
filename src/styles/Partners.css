@@ -1,15 +1,15 @@
 .partners-div {
-    display: flex;
-    justify-content: space-around;
-    color: rgb(221, 221, 221, 0.5);
+  display: flex;
+  justify-content: space-around;
+  color: rgb(221, 221, 221, 0.5);
 }
 
 .partner-div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .partner-div > p {
-    margin-left: 1rem;
-    cursor: pointer;
+  margin-left: 1rem;
+  cursor: pointer;
 }

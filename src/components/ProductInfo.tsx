@@ -1,30 +1,25 @@
-import "../styles/ProductInfo.css"
+import "../styles/ProductInfo.css";
 import type { IProduct } from "../types/ProductInterface";
 import { IoIosStarOutline } from "react-icons/io";
-
+import StarSystem from "./StarSystem";
 
 type Props = {
   product: IProduct;
 };
 
-const ProductInfo = ({product}: Props) => {
-  return <div className="product-image-div">
-                <img src={product.imageUrl} className="product-image" />
-                <div className="product-info-div">
-                    <div className="stars-div">
-                        <IoIosStarOutline className="rating"/>
-                        <IoIosStarOutline className="rating"/>
-                        <IoIosStarOutline className="rating"/>
-                        <IoIosStarOutline className="rating"/>
-                        <IoIosStarOutline className="rating"/>
-                        <p className="rating">{product.rating}</p>
-                    </div>
-                    <p className="product-text">{product.name}</p>
-                    <p className="author-text">{product.author}</p>
-                    <hr className="horizontal-line"></hr>
-                    <p className="product-text">{product.price} €</p> 
-                </div>
-              </div>;
+const ProductInfo = ({ product }: Props) => {
+  return (
+    <div className="product-image-div">
+      <img src={product.imageUrl} className="product-image" />
+      <div className="product-info-div">
+        <StarSystem rating={product.rating} />
+        <p className="product-text">{product.name}</p>
+        <p className="author-text">{product.author}</p>
+        <hr className="horizontal-line"></hr>
+        <p className="product-text">{product.price} €</p>
+      </div>
+    </div>
+  );
 };
 
 export default ProductInfo;
