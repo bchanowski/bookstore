@@ -1,6 +1,5 @@
 import "../styles/ProductInfo.css";
 import type { IProduct } from "../types/ProductInterface";
-import { IoIosStarOutline } from "react-icons/io";
 import StarSystem from "./StarSystem";
 
 type Props = {

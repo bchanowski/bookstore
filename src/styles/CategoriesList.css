@@ -1,0 +1,18 @@
+.categories-list-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8svh;
+    background-image: linear-gradient(to bottom right, rgb(245, 233, 218), rgb(241, 240, 240));
+    width: 30%;
+}
+
+.join-news-text {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.join-news-text:hover {
+    color: rgb(94, 93, 93);
+}

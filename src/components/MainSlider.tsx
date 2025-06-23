@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import "../styles/MainSlider.css";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 import { FaCircle, FaRegCircle } from "react-icons/fa6";
+import CategoriesList from "./CategoriesList";
 
 type Props = {
   imagesUrls: string[];
@@ -47,6 +48,8 @@ const MainSlider = ({ imagesUrls }: Props) => {
   }, [startTimer]);
 
   return (
+    <div className="slider-div">
+    <CategoriesList />
     <div
       className="main-slider-div"
       onMouseEnter={() => setIsPaused(true)}
@@ -87,7 +90,7 @@ const MainSlider = ({ imagesUrls }: Props) => {
           </button>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 };
 

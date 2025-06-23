@@ -1,8 +1,8 @@
-import type { IFooterData } from "../types/FooterDataInterFace";
 import "../styles/FooterSection.css";
+import type { IListData } from "../types/ListDataInterface";
 
 type Props = {
-  section: IFooterData;
+  section: IListData;
 };
 
 const FooterSection = ({ section }: Props) => {

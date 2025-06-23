@@ -1,6 +1,6 @@
-import type { IFooterData } from "../types/FooterDataInterFace";
+import type { IListData } from "../types/ListDataInterface";
 
-const footerData: IFooterData[] = [
+const footerData: IListData[] = [
   {
     id: 1,
     name: "About",
