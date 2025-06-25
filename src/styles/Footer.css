@@ -5,12 +5,33 @@
 
 .footer-data-map-div {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .footer-info-div {
   width: 60%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 2rem;
+}
+
+.footer-sections-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+.address-info {
+  margin-top: auto;
+  color: rgb(221, 221, 221, 0.5);
+  font-size: small;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 5px;
 }

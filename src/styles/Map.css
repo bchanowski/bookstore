@@ -1,0 +1,9 @@
+.map-div {
+  height: 60%;
+  width: 30%;
+  margin: 2rem;
+}
+
+.leaflet-container {
+  height: 400px;
+}
