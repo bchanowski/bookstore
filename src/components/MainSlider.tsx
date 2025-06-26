@@ -49,48 +49,49 @@ const MainSlider = ({ imagesUrls }: Props) => {
 
   return (
     <div className="slider-div">
-    <CategoriesList />
-    <div
-      className="main-slider-div"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      <div className="images-div">
-        {imagesUrls.map((url) => (
-          <img
-            src={url}
-            key={url}
-            className="main-slider-images"
-            style={{ translate: `${-100 * imageIndex}%` }}
-          />
-        ))}
-      </div>
-      <button
-        className="main-slider-buttons"
-        style={{ left: 0 }}
-        onClick={showLastImage}
+      <CategoriesList />
+      <div
+        className="main-slider-div"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
       >
-        <LiaAngleLeftSolid />
-      </button>
-      <button
-        className="main-slider-buttons"
-        style={{ right: 0 }}
-        onClick={showNextImage}
-      >
-        <LiaAngleRightSolid />
-      </button>
-      <div className="index-buttons-div">
-        {imagesUrls.map((_, index) => (
-          <button
-            className="index-btns"
-            key={index}
-            onClick={() => setImageIndex(index)}
-          >
-            {index === imageIndex ? <FaCircle /> : <FaRegCircle />}
-          </button>
-        ))}
+        <div className="images-div">
+          {imagesUrls.map((url) => (
+            <img
+              src={url}
+              key={url}
+              className="main-slider-images"
+              style={{ translate: `${-100 * imageIndex}%` }}
+            />
+          ))}
+        </div>
+        <button
+          className="main-slider-buttons"
+          style={{ left: 0 }}
+          onClick={showLastImage}
+        >
+          <LiaAngleLeftSolid />
+        </button>
+        <button
+          className="main-slider-buttons"
+          style={{ right: 0 }}
+          onClick={showNextImage}
+        >
+          <LiaAngleRightSolid />
+        </button>
+        <div className="index-buttons-div">
+          {imagesUrls.map((_, index) => (
+            <button
+              className="index-btns"
+              key={index}
+              onClick={() => setImageIndex(index)}
+            >
+              {index === imageIndex ? <FaCircle /> : <FaRegCircle />}
+            </button>
+          ))}
+        </div>
       </div>
-    </div></div>
+    </div>
   );
 };
 

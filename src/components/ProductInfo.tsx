@@ -15,7 +15,7 @@ const ProductInfo = ({ product }: Props) => {
         <p className="product-text">{product.name}</p>
         <p className="author-text">{product.author}</p>
         <hr className="horizontal-line"></hr>
-        <p className="product-text">{product.price} €</p>
+        <p className="product-price">{product.price} €</p>
       </div>
     </div>
   );

@@ -1,14 +1,16 @@
 .nav-div {
   background-color: rgb(238, 180, 73);
   color: rgb(58, 58, 58);
-  font-size: large;
+  font-size: x-large;
   display: flex;
   justify-content: space-between;
-  height: 8svh;
+  height: 5rem;
+  letter-spacing: 0.2rem;
+  box-shadow: 1px 1px 1px rgb(87, 87, 87);
 }
 
 .nav-logo-div {
-  margin-left: 2svw;
+  margin-left: 5rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -20,7 +22,7 @@
 
 .nav-text {
   cursor: pointer;
-  margin-right: 2svw;
+  margin-right: 2rem;
   transition: all 0.5s ease;
 }
 
@@ -37,12 +39,20 @@
 
 .nav-icons {
   display: flex;
-  margin-left: 25px;
+  margin-left: 3rem;
 }
+
 .nav-icon {
   cursor: pointer;
-  height: 2svw;
-  width: 2svw;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.nav-logo {
+  height: 4rem;
+  width: 4rem;
   margin-right: 10px;
   transition: all 0.5s ease;
 }
@@ -54,5 +64,5 @@
 .vertical-line {
   border-left: 1px solid rgb(61, 61, 61);
   height: 5svh;
-  margin-right: 2svw;
+  margin-right: 2rem;
 }

@@ -4,5 +4,9 @@ html,
 body {
   margin: 0px;
   font-family: "Inter", sans-serif;
-  background-image: linear-gradient(to bottom right,rgba(245, 241, 225), rgba(255, 245, 189));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(228, 221, 196),
+    rgba(255, 245, 189)
+  );
 }

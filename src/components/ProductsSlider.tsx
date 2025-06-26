@@ -69,42 +69,46 @@ const ProductsSlider = ({ header, products }: Props) => {
   };
 
   return (
-    <div className="products-slider-div">
-      <div className="category-div">
-        <p className="category-text">{header}</p>
-        <button className="showmore-btn">Show More {">"}</button>
-      </div>
-      <div className="products-div">
-        {currentPosition !== 0 ? (
-          <button
-            className="products-buttons"
-            style={{ left: 0 }}
-            onClick={prevSlide}
-          >
-            <LiaAngleLeftSolid />
-          </button>
-        ) : (
-          <></>
-        )}
-        <div className="products-images-div" ref={sliderRef}>
-          {products.map((product) => (
-            <>
-              <ProductInfo product={product} />
-              <div className="product-vertical-line"></div>
-            </>
-          ))}
+    <div className="products-slider-div-main">
+      <div className="products-slider-div">
+        <div className="category-div">
+          <p className="category-text">{header}</p>
         </div>
-        {currentPosition !== maxScroll ? (
-          <button
-            className="products-buttons"
-            style={{ right: 0 }}
-            onClick={nextSlide}
-          >
-            <LiaAngleRightSolid />
-          </button>
-        ) : (
-          <></>
-        )}
+        <div className="products-div">
+          {currentPosition !== 0 ? (
+            <button
+              className="products-buttons"
+              style={{ left: 0 }}
+              onClick={prevSlide}
+            >
+              <LiaAngleLeftSolid />
+            </button>
+          ) : (
+            <></>
+          )}
+          <div className="products-images-div" ref={sliderRef}>
+            {products.map((product) => (
+              <>
+                <ProductInfo product={product} />
+                <div className="product-vertical-line"></div>
+              </>
+            ))}
+          </div>
+          {currentPosition !== maxScroll ? (
+            <button
+              className="products-buttons"
+              style={{ right: 0 }}
+              onClick={nextSlide}
+            >
+              <LiaAngleRightSolid />
+            </button>
+          ) : (
+            <></>
+          )}
+        </div>
+      </div>
+      <div className="show-div">
+        <button className="showmore-btn">Show More {">"}</button>
       </div>
     </div>
   );

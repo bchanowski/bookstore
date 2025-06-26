@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="nav-div">
       <div className="nav-logo-div">
-        <PiBookOpenUserBold className="nav-icon" />
+        <PiBookOpenUserBold className="nav-logo" />
         <p className="nav-text">Book Store</p>
       </div>
       <div className="nav-section-div">

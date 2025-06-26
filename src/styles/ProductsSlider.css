@@ -1,13 +1,16 @@
 .products-slider-div {
-  margin: 8svh 8svw 8svh 8svw;
+  margin: 0;
   background-color: rgb(221, 221, 221, 0.5);
   box-shadow: 5px 5px 5px rgb(87, 87, 87);
+}
+
+.products-slider-div-main {
+  margin: 4rem;
 }
 
 .category-div {
   background-color: rgb(43, 43, 43);
   color: rgb(221, 221, 221);
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,6 +19,7 @@
 
 .category-text {
   font-size: x-large;
+  margin: 1rem;
 }
 
 .products-div {
@@ -46,27 +50,32 @@
   top: 50%;
   width: 25px;
   height: 25px;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(43, 43, 43);
+  color: rgb(221, 221, 221);
 }
 
 .products-buttons:hover {
   background-color: rgb(68, 67, 67, 0.5);
 }
 
+.show-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
 .showmore-btn {
+  width: 20%;
   all: unset;
-  text-align: end;
-  background-color: rgb(68, 67, 67, 0.8);
-  color: white;
   cursor: pointer;
+  color: white;
   transition: background-color 100ms ease-in-out;
+  background-color: rgb(68, 67, 67);
   padding: 0.5rem;
-  border-radius: 5px;
-  position: absolute;
-  right: 0;
-  margin-right: 2svw;
+  box-shadow: 3px 3px 3px 1px rgb(87, 87, 87);
 }
 
 .showmore-btn:hover {
-  background-color: rgb(68, 67, 67, 0.2);
+  background-color: rgb(68, 67, 67, 0.8);
 }
