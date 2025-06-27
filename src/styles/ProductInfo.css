@@ -24,6 +24,7 @@
   display: flex;
   width: 14rem;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .product-text {
@@ -34,15 +35,34 @@
   text-overflow: ellipsis;
 }
 
+.moving-text > p:hover {
+  text-overflow: unset;
+  overflow: unset;
+  animation: moving 5s linear 0s infinite forwards;
+}
+
+@keyframes moving {
+  1% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .author-text {
   margin: 0;
   font-size: small;
+  color: rgb(61, 61, 61, 0.8);
 }
 
 .product-price {
   margin: 0;
   background-color: rgb(61, 61, 61, 0.2);
-  color: rgb(59, 58, 58);
+  color: rgb(160, 136, 31);
   padding: 0.2rem;
 }
 

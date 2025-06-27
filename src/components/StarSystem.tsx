@@ -8,11 +8,7 @@ type Props = {
 const StarSystem = ({ rating }: Props) => {
   return (
     <div className="stars-div">
-      {Number(rating) > 0 ? (
-        <IoIosStar className="rating" />
-      ) : (
-        <IoIosStarOutline className="rating" />
-      )}
+      {Number(rating) > 0 ? <IoIosStar /> : <IoIosStarOutline />}
       {Number(rating) >= 1.5 ? (
         Number(rating) >= 2 ? (
           <IoIosStar />

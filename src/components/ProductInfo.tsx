@@ -12,7 +12,9 @@ const ProductInfo = ({ product }: Props) => {
       <img src={product.imageUrl} className="product-image" />
       <div className="product-info-div">
         <StarSystem rating={product.rating} />
-        <p className="product-text">{product.name}</p>
+        <div className="moving-text">
+          <p className="product-text">{product.name}</p>
+        </div>
         <p className="author-text">{product.author}</p>
         <hr className="horizontal-line"></hr>
         <p className="product-price">{product.price} €</p>
