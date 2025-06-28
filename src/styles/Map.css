@@ -7,3 +7,16 @@
 .leaflet-container {
   height: 400px;
 }
+
+@media screen and (max-width: 1180px) {
+  .map-div {
+    width: 90%;
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .map-div {
+    margin-left: 1.5rem;
+  }
+}

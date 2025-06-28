@@ -24,6 +24,39 @@
   background-color: rgb(43, 43, 43);
   color: rgb(221, 221, 221);
   font-size: xx-large;
-  padding: 0.48rem;
   cursor: pointer;
+  padding: 0.48rem;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 902px) {
+  .newsletter-text {
+    font-size: large;
+  }
+  .newsletter-input {
+    font-size: large;
+  }
+  .newsletter-icon {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .newsletter-text {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .newsletter-div {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .newsletter-icon {
+    padding: 0.5rem;
+  }
 }

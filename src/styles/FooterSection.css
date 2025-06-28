@@ -6,3 +6,10 @@
 .footer-section > p:hover {
   color: rgb(221, 221, 221, 0.5);
 }
+
+@media screen and (max-width: 750px) {
+  .footer-section {
+    text-align: center;
+    margin: 1rem;
+  }
+}

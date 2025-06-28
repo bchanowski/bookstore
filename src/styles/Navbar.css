@@ -66,3 +66,29 @@
   height: 5svh;
   margin-right: 2rem;
 }
+
+@media screen and (max-width: 1550px) {
+  .nav-text {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .nav-text {
+    font-size: medium;
+  }
+
+  .nav-logo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .nav-icon {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .nav-div {
+    height: 3rem;
+  }
+}

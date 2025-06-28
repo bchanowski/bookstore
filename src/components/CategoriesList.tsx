@@ -13,9 +13,11 @@ const CategoriesList = () => {
 
   return (
     <div className="categories-list-div">
-      {categoriesListData.map((list) => (
-        <List items={list} />
-      ))}
+      <div className="categories">
+        {categoriesListData.map((list) => (
+          <List items={list} />
+        ))}
+      </div>
       <p className="join-news-text" onClick={scrollToBottom}>
         Join Our Newsletter
         <AiOutlineCaretDown />

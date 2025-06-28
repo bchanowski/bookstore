@@ -34,3 +34,10 @@
 .search-icon:hover {
   color: rgb(238, 238, 238);
 }
+
+@media screen and (max-width: 1420px) {
+  .search-icon {
+    width: 1.5rem;
+    height: 1rem;
+  }
+}

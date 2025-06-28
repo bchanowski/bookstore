@@ -35,3 +35,22 @@
   width: 1.5rem;
   margin-right: 5px;
 }
+
+@media screen and (max-width: 1180px) {
+  .footer-data-map-div {
+    flex-direction: column;
+  }
+  .footer-info-div {
+    width: 90%;
+    margin: 0;
+  }
+  .address-info {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer-sections-div {
+    flex-wrap: wrap;
+  }
+}

@@ -48,7 +48,7 @@ const ProductsSlider = ({ header, products }: Props) => {
 
   const nextSlide = () => {
     if (sliderRef.current) {
-      const newPosition = Math.min(currentPosition + itemWidth * 3, maxScroll);
+      const newPosition = Math.min(currentPosition + itemWidth * 1, maxScroll);
       sliderRef.current.scrollTo({
         left: newPosition,
         behavior: "smooth",
@@ -59,7 +59,7 @@ const ProductsSlider = ({ header, products }: Props) => {
 
   const prevSlide = () => {
     if (sliderRef.current) {
-      const newPosition = Math.max(currentPosition - itemWidth * 3, 0);
+      const newPosition = Math.max(currentPosition - itemWidth * 1, 0);
       sliderRef.current.scrollTo({
         left: newPosition,
         behavior: "smooth",
