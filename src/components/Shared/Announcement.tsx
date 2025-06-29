@@ -1,4 +1,4 @@
-import "../styles/Announcement.css";
+import "../../styles/Shared/Announcement.css";
 
 const Announcement = () => {
   return (

@@ -1,5 +1,5 @@
-import "../styles/List.css";
-import type { IListData } from "../types/ListDataInterface";
+import "../../styles/MainPage/List.css";
+import type { IListData } from "../../types/ListDataInterface";
 
 type Props = {
   items: IListData;

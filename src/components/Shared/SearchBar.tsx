@@ -1,4 +1,4 @@
-import "../styles/SearchBar.css";
+import "../../styles/Shared/SearchBar.css";
 import { VscSearch } from "react-icons/vsc";
 
 const SearchBar = () => {

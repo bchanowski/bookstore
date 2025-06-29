@@ -1,5 +1,5 @@
-import { categoriesListData } from "../data/categoriesListData";
-import "../styles/CategoriesList.css";
+import { categoriesListData } from "../../data/categoriesListData";
+import "../../styles/MainPage/CategoriesList.css";
 import List from "./List";
 import { AiOutlineCaretDown } from "react-icons/ai";
 

@@ -1,4 +1,4 @@
-import "../styles/Newsletter.css";
+import "../../styles/Shared/Newsletter.css";
 import { MdSend } from "react-icons/md";
 
 const Newsletter = () => {

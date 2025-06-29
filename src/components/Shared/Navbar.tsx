@@ -1,5 +1,5 @@
-import "../styles/Navbar.css";
-import SearchBar from "./SearchBar";
+import "../../styles/Shared/Navbar.css";
+import SearchBar from "../Shared/SearchBar";
 import { VscAccount } from "react-icons/vsc";
 import { PiShoppingCartSimpleBold } from "react-icons/pi";
 import { PiBookOpenUserBold } from "react-icons/pi";

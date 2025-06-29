@@ -1,5 +1,5 @@
-import "../styles/FooterSection.css";
-import type { IListData } from "../types/ListDataInterface";
+import "../../styles/Shared/FooterSection.css";
+import type { IListData } from "../../types/ListDataInterface";
 
 type Props = {
   section: IListData;

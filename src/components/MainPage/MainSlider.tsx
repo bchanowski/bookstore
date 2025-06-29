@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import "../styles/MainSlider.css";
+import "../../styles/MainPage/MainSlider.css";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 import { FaCircle, FaRegCircle } from "react-icons/fa6";
 import CategoriesList from "./CategoriesList";

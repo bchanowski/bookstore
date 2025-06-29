@@ -1,6 +1,6 @@
-import footerData from "../data/footerData";
-import "../styles/Footer.css";
-import FooterSection from "./FooterSection";
+import footerData from "../../data/footerData";
+import "../../styles/Shared/Footer.css";
+import FooterSection from "../Shared/FooterSection";
 import Map from "./Map";
 import Newsletter from "./Newsletter";
 import Partners from "./Partners";

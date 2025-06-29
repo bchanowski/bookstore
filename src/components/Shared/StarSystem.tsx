@@ -1,5 +1,5 @@
 import { IoIosStarOutline, IoIosStarHalf, IoIosStar } from "react-icons/io";
-import "../styles/StarSystem.css";
+import "../../styles/Shared/StarSystem.css";
 
 type Props = {
   rating: string;

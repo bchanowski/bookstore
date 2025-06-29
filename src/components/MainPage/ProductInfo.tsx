@@ -1,6 +1,6 @@
-import "../styles/ProductInfo.css";
-import type { IProduct } from "../types/ProductInterface";
-import StarSystem from "./StarSystem";
+import "../../styles/MainPage/ProductInfo.css";
+import type { IProduct } from "../../types/ProductInterface";
+import StarSystem from "../Shared/StarSystem";
 
 type Props = {
   product: IProduct;

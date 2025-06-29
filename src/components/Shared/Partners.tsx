@@ -1,4 +1,4 @@
-import "../styles/Partners.css";
+import "../../styles/Shared/Partners.css";
 
 const Partners = () => {
   return (

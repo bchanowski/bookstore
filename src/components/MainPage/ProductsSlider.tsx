@@ -1,6 +1,6 @@
-import type { IProduct } from "../types/ProductInterface";
+import type { IProduct } from "../../types/ProductInterface";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
-import "../styles/ProductsSlider.css";
+import "../../styles/MainPage/ProductsSlider.css";
 import { useEffect, useRef, useState } from "react";
 import ProductInfo from "./ProductInfo";
 
