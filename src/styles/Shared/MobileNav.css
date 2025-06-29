@@ -1,0 +1,41 @@
+.mobile-nav {
+  z-index: 40;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 500px;
+  background-color: rgb(238, 180, 73);
+  box-shadow: 3px 3px 3px rgb(87, 87, 87);
+}
+
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-nav-items > p {
+  cursor: pointer;
+}
+
+.mobile-nav-items > p:hover {
+  color: rgb(238, 238, 238);
+}
+
+.close-icon {
+  font-size: xx-large;
+  margin: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: rgb(238, 238, 238);
+}
+
+@media screen and (max-width: 600px) {
+  .close-icon {
+    margin: 0;
+  }
+}

@@ -20,34 +20,11 @@
   color: rgb(238, 238, 238);
 }
 
-.nav-text {
-  cursor: pointer;
-  margin-right: 2rem;
-  transition: all 0.5s ease;
-}
-
-.nav-text:hover {
-  color: rgb(238, 238, 238);
-}
-
 .nav-section-div {
   display: flex;
   width: 60%;
   justify-content: end;
   align-items: center;
-}
-
-.nav-icons {
-  display: flex;
-  margin-left: 3rem;
-}
-
-.nav-icon {
-  cursor: pointer;
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 1.5rem;
-  transition: all 0.5s ease;
 }
 
 .nav-logo {
@@ -61,34 +38,51 @@
   color: rgb(238, 238, 238);
 }
 
-.vertical-line {
-  border-left: 1px solid rgb(61, 61, 61);
-  height: 5svh;
-  margin-right: 2rem;
-}
-
-@media screen and (max-width: 1550px) {
-  .nav-text {
-    font-size: large;
-  }
+.logo-text {
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 1420px) {
-  .nav-text {
+  .logo-text {
     font-size: medium;
   }
-
   .nav-logo {
     height: 3rem;
     width: 3rem;
   }
-
-  .nav-icon {
-    cursor: pointer;
-    height: 1.5rem;
-    width: 1.5rem;
-  }
   .nav-div {
     height: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-div {
+    height: 4rem;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: start;
+    justify-content: center;
+  }
+  .nav-logo-div {
+    margin: 0;
+    align-items: center;
+  }
+  .logo-text {
+    margin: 0;
+  }
+  .nav-logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  .nav-section-div {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .nav-section-div {
+    width: 40%;
   }
 }

@@ -5,7 +5,8 @@
   height: 55%;
   background-color: rgb(66, 66, 66);
   border-radius: 14px;
-  margin-left: 2svw;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .search-bar-input {
@@ -37,7 +38,38 @@
 
 @media screen and (max-width: 1420px) {
   .search-icon {
+    width: 2rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar-div {
+    margin: 0;
+  }
+
+  .search-bar-input {
+    width: 80svw;
+    margin: 0;
+  }
+
+  .search-icon {
+    margin: 0;
     width: 1.5rem;
     height: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .search-bar-input {
+    width: 90svw;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .search-bar-input {
+    width: 70svw;
+    margin: 0;
   }
 }
