@@ -3,6 +3,7 @@
   color: rgb(58, 58, 58);
   font-size: x-large;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 5rem;
   letter-spacing: 0.2rem;
@@ -20,13 +21,12 @@
   color: rgb(238, 238, 238);
 }
 
-.nav-section-div {
+.logo-text-div {
   display: flex;
-  width: 60%;
-  justify-content: end;
   align-items: center;
+  width: 70%;
+  justify-content: space-between;
 }
-
 .nav-logo {
   height: 4rem;
   width: 4rem;
@@ -43,6 +43,11 @@
   transition: all 0.5s ease;
 }
 
+.navbar-items-div {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 1420px) {
   .logo-text {
     font-size: medium;
@@ -56,33 +61,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav-div {
-    height: 4rem;
-    flex-wrap: wrap;
-    margin: 0;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    height: 7rem;
   }
   .nav-logo-div {
     margin: 0;
-    align-items: center;
   }
-  .logo-text {
-    margin: 0;
-  }
-  .nav-logo {
-    height: 2rem;
-    width: 2rem;
-  }
-  .nav-section-div {
-    flex-wrap: wrap;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .nav-section-div {
-    width: 40%;
+  .logo-text-div {
+    width: 90%;
+    justify-content: space-between;
   }
 }

@@ -48,21 +48,3 @@
     width: 1.5rem;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  .vertical-line {
-    height: 1rem;
-    visibility: hidden;
-  }
-  .nav-icons {
-    flex-direction: column;
-  }
-  .nav-icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-top: 4rem;
-  }
-  .nav-text {
-    font-size: x-large;
-  }
-}

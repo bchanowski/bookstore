@@ -1,0 +1,29 @@
+.top-btn {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(238, 180, 73);
+  border-radius: 50%;
+  padding: 0.5rem;
+  right: -100px;
+  bottom: 50px;
+  font-size: xx-large;
+  color: rgb(209, 208, 208);
+  cursor: pointer;
+  transform: translateX(-150px);
+  animation: slideLeft 1s;
+  z-index: 1000;
+}
+
+.top-btn:hover {
+  background-color: rgb(255, 197, 89);
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
+}

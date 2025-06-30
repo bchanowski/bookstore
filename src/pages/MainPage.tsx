@@ -8,6 +8,7 @@ import photo2 from "../assets/mainslider/slider2.png";
 import photo3 from "../assets/mainslider/slider3.png";
 import photo4 from "../assets/mainslider/slider4.png";
 import fantasyProducts from "../data/FantasyProducts";
+import GoToTopBtn from "../components/Shared/GoToTopBtn";
 
 const IMAGES = [photo1, photo2, photo3, photo4];
 
@@ -21,6 +22,7 @@ const MainPage = () => {
       <ProductsSlider header="ROMANCE" products={fantasyProducts} />
       <ProductsSlider header="EDUCATIONAL" products={fantasyProducts} />
       <Footer />
+      <GoToTopBtn />
     </>
   );
 };

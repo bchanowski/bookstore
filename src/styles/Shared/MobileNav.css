@@ -1,5 +1,5 @@
 .mobile-nav {
-  z-index: 40;
+  z-index: 1001;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -37,5 +37,8 @@
 @media screen and (max-width: 600px) {
   .close-icon {
     margin: 0;
+  }
+  .mobile-nav {
+    width: 100svw;
   }
 }

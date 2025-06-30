@@ -4,11 +4,7 @@
   flex-direction: column;
   margin-top: 2rem;
   margin-left: 3rem;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(245, 233, 218),
-    rgb(241, 240, 240)
-  );
+  background-color: rgb(221, 221, 221, 0.5);
   width: 20%;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgb(87, 87, 87);
@@ -50,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
   .categories-list-div {
     font-size: small;
   }

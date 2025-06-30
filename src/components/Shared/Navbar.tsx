@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 import NavbarItems from "./NavbarItems";
 
 const Navbar = () => {
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(true);
 
   const isMobile = () => {
     if (window.innerWidth <= 1200) {
@@ -19,20 +19,21 @@ const Navbar = () => {
   window.addEventListener("resize", isMobile);
   return (
     <div className="nav-div">
-      <div className="nav-logo-div">
-        <PiBookOpenUserBold className="nav-logo" />
-        <p className="logo-text">Book Store</p>
-      </div>
-      <div className="nav-section-div">
+      <div className="logo-text-div">
+        <div className="nav-logo-div">
+          <PiBookOpenUserBold className="nav-logo" />
+          <p className="logo-text">Book Store</p>
+        </div>
+
         {mobile ? (
-          <>
+          <div className="navbar-items-div">
             <NavbarItems />
-          </>
+          </div>
         ) : (
           <MobileNav />
         )}
-        <SearchBar />
       </div>
+      <SearchBar />
     </div>
   );
 };

@@ -42,34 +42,13 @@
     height: 1.5rem;
   }
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .search-bar-div {
-    margin: 0;
+    height: 30%;
+    margin-bottom: 0.5rem;
   }
-
   .search-bar-input {
     width: 80svw;
-    margin: 0;
-  }
-
-  .search-icon {
-    margin: 0;
-    width: 1.5rem;
-    height: 1rem;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .search-bar-input {
-    width: 90svw;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .search-bar-input {
-    width: 70svw;
     margin: 0;
   }
 }
