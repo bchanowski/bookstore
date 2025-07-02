@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import "../../styles/MainPage/ProductInfo.css";
 import type { IProduct } from "../../types/ProductInterface";
 import StarSystem from "../Shared/StarSystem";
@@ -7,8 +8,9 @@ type Props = {
 };
 
 const ProductInfo = ({ product }: Props) => {
+  let navigate = useNavigate();
   return (
-    <div className="product-image-div">
+    <div className="product-image-div" onClick={() => navigate("/product/123456")}>
       <img src={product.imageUrl} className="product-image" />
       <div className="product-info-div">
         <StarSystem rating={product.rating} />

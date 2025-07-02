@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
       <Navbar />
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='/product' element={<ProductPage />} />
+        <Route path='/product/:id' element={<ProductPage />} />
       </Routes>
       <Footer />
       <GoToTopBtn />

@@ -4,9 +4,11 @@ import { PiBookOpenUserBold } from "react-icons/pi";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import NavbarItems from "./NavbarItems";
+import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(true);
+  let navigate = useNavigate();
 
   const isMobile = () => {
     if (window.innerWidth <= 1200) {
@@ -20,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="nav-div">
       <div className="logo-text-div">
-        <div className="nav-logo-div">
+        <div className="nav-logo-div" onClick={() => navigate("/")}>
           <PiBookOpenUserBold className="nav-logo" />
           <p className="logo-text">Book Store</p>
         </div>
