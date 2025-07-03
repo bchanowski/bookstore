@@ -14,8 +14,8 @@ const CategoriesList = () => {
   return (
     <div className="categories-list-div">
       <div className="categories">
-        {categoriesListData.map((list) => (
-          <List items={list} />
+        {categoriesListData.map((list, index) => (
+          <List items={list} key={index} />
         ))}
       </div>
       <p className="join-news-text" onClick={scrollToBottom}>

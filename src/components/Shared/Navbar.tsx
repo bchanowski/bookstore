@@ -8,7 +8,7 @@ import { useNavigate } from "react-router";
 
 const Navbar = () => {
   const [mobile, setMobile] = useState(true);
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const isMobile = () => {
     if (window.innerWidth <= 1200) {

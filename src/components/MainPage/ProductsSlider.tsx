@@ -87,11 +87,11 @@ const ProductsSlider = ({ header, products }: Props) => {
             <></>
           )}
           <div className="products-images-div" ref={sliderRef}>
-            {products.map((product) => (
-              <>
+            {products.map((product, index) => (
+              <div key={index}>
                 <ProductInfo product={product} />
                 <div className="product-vertical-line"></div>
-              </>
+              </div>
             ))}
           </div>
           {currentPosition !== maxScroll ? (

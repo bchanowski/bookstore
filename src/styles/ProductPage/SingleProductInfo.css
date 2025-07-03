@@ -1,0 +1,7 @@
+.product-page-info-div {
+  display: flex;
+  width: 40%;
+  align-items: end;
+  margin: 2rem;
+  flex-direction: column;
+}

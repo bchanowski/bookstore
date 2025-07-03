@@ -8,9 +8,12 @@ type Props = {
 };
 
 const ProductInfo = ({ product }: Props) => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div className="product-image-div" onClick={() => navigate("/product/123456")}>
+    <div
+      className="product-image-div"
+      onClick={() => navigate("/product/123456")}
+    >
       <img src={product.imageUrl} className="product-image" />
       <div className="product-info-div">
         <StarSystem rating={product.rating} />

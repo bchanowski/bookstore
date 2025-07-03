@@ -9,8 +9,8 @@ const FooterSection = ({ section }: Props) => {
   return (
     <div className="footer-section">
       <h2>{section.name}</h2>
-      {section.options.map((option) => (
-        <p>{option}</p>
+      {section.options.map((option, index) => (
+        <p key={index}>{option}</p>
       ))}
     </div>
   );

@@ -5,13 +5,19 @@ import ProductsSlider from "../components/MainPage/ProductsSlider";
 import SingleProduct from "../components/ProductPage/SingleProduct";
 
 const ProductPage = () => {
-  let { id } = useParams();
-  const product: IProduct = fantasyProducts[0];
+  const { id } = useParams();
+  const product: IProduct = fantasyProducts[1];
   return (
     <>
-    {id !== undefined ? <><SingleProduct id={id} product={product}/>
-      <ProductsSlider header="SIMILAR PRODUCTS" products={fantasyProducts}/></> : <p>Error Occured. Try Again Later!</p>}
-      
+      {id !== undefined && (
+        <>
+          <SingleProduct id={id} product={product} />
+          <ProductsSlider
+            header="SIMILAR PRODUCTS"
+            products={fantasyProducts}
+          />
+        </>
+      )}
     </>
   );
 };

@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="footer-data-map-div">
         <div className="footer-info-div">
           <div className="footer-sections-div">
-            {footerData.map((footerSection) => (
-              <FooterSection section={footerSection} />
+            {footerData.map((footerSection, index) => (
+              <FooterSection section={footerSection} key={index} />
             ))}
           </div>
           <div className="address-info">
