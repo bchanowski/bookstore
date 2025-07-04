@@ -2,6 +2,7 @@ import type { IProduct } from "../../types/ProductInterface";
 import "../../styles/ProductPage/SingleProductInfo.css";
 import ProductOption from "./ProductOption";
 import PriceGuarantee from "./PriceGuarantee";
+import AmountCounter from "./AmountCounter";
 
 type Props = { id: string; product: IProduct };
 
@@ -14,7 +15,8 @@ const SingleProductInfo = ({ id, product }: Props) => {
       <p>{product.author}</p>
       <p>{product.price}</p>
       <ProductOption name="Cover" options={options} />
-      <div>select number</div>
+      <p className="product-option-text">Amount:</p>
+      <AmountCounter max={5} />
       <PriceGuarantee />
       <button>add to cart</button>
       <div>details</div>

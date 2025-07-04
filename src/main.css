@@ -10,3 +10,9 @@ body {
     rgba(255, 245, 189)
   );
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

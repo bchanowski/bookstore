@@ -20,3 +20,9 @@
   display: flex;
   color: rgb(160, 136, 31);
 }
+
+@media screen and (max-width: 1400px) {
+  .product-page-div {
+    margin: 2rem;
+  }
+}
