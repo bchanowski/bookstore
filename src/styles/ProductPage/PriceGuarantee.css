@@ -1,0 +1,31 @@
+.guarantee-div {
+  background-color: rgb(199, 247, 199);
+  border: 1px black solid;
+  border-radius: 2px;
+  width: 60%;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.guarantee-main {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  margin-top: 0;
+  letter-spacing: 0.2rem;
+}
+
+.guarantee-main-text {
+  margin: 0;
+}
+
+.guarantee-text {
+  margin: 0;
+}
+
+.guarantee-link {
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}

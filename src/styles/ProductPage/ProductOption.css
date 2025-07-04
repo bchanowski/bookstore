@@ -1,0 +1,40 @@
+.product-option-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-option-text {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: large;
+}
+
+.options-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-option {
+  background-color: rgb(190, 190, 190);
+  border: 1px rgb(190, 190, 190) solid;
+  padding: 1rem;
+  width: 6rem;
+  margin-right: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-option:hover {
+  background-color: rgb(235, 234, 234);
+}
+
+.selected-option {
+  border: 1px black solid;
+}
