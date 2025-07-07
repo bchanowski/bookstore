@@ -1,0 +1,26 @@
+.details-title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: large;
+}
+
+.detail-p {
+  width: 100%;
+  display: flex;
+}
+
+.detail-category {
+  width: 50%;
+  font-weight: 700;
+}
+
+.detail-info {
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.details-div {
+  width: 80%;
+}

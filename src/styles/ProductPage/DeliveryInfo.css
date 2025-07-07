@@ -1,0 +1,42 @@
+.delivery-options-div {
+  display: flex;
+  border: 1px solid black;
+  background-color: rgb(190, 190, 190);
+}
+
+.delivery-info-div {
+  width: 8rem;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.vertical-line-delivery {
+  border-left: 1px solid rgb(155, 154, 154);
+  height: 5rem;
+  margin-top: 0.4rem;
+}
+
+.delivery-name {
+  font-size: large;
+  font-weight: 500;
+  margin: 0.2rem;
+}
+
+.delivery-price {
+  margin: 0.2rem;
+}
+
+.delivery-icon {
+  font-size: xx-large;
+}
+
+.delivery-title-text {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: large;
+}

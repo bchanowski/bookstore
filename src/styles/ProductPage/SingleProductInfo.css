@@ -1,9 +1,10 @@
 .product-page-info-div {
   display: flex;
-  width: 50%;
+  width: 60%;
   align-items: start;
   margin: 2rem;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .add-to-cart-btn {
@@ -19,6 +20,7 @@
   align-items: center;
   transition: all 0.2s ease;
   letter-spacing: 2px;
+  margin-top: 2rem;
 }
 
 .cart-logo {
@@ -68,4 +70,20 @@
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.price-text {
+  font-size: x-large;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.price-reduced-text {
+  font-size: x-large;
+  font-weight: 500;
+  color: rgb(221, 61, 61);
+}
+
+.desc-text {
+  width: 80%;
 }
