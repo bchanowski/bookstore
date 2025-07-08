@@ -40,3 +40,9 @@
   font-weight: 600;
   font-size: large;
 }
+
+@media screen and (max-width: 800px) {
+  .delivery-options-div {
+    flex-direction: column;
+  }
+}

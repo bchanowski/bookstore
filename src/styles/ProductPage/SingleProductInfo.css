@@ -87,3 +87,16 @@
 .desc-text {
   width: 80%;
 }
+
+@media screen and (max-width: 1100px) {
+  .product-page-info-div {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price-amount-div {
+    flex-direction: column;
+  }
+}

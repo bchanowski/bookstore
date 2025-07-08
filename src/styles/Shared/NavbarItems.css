@@ -37,14 +37,14 @@
   }
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1200px) {
   .nav-text {
-    font-size: medium;
+    font-size: xx-large;
   }
 
   .nav-icon {
     cursor: pointer;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 3rem;
+    width: 3rem;
   }
 }

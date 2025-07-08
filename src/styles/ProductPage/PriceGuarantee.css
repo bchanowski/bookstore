@@ -29,3 +29,9 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1300px) {
+  .guarantee-div {
+    width: 80%;
+  }
+}

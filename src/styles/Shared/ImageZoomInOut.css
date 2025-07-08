@@ -29,3 +29,8 @@
   font-size: x-large;
   padding: 0.5rem;
 }
+@media screen and (max-width: 600px) {
+  .zoom-img {
+    max-width: 300px;
+  }
+}

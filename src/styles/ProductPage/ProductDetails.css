@@ -24,3 +24,9 @@
 .details-div {
   width: 80%;
 }
+
+@media screen and (max-width: 1100px) {
+  .details-title {
+    text-align: center;
+  }
+}
