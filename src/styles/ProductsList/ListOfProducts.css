@@ -1,0 +1,7 @@
+.products-list-div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1100px;
+  width: 80%;
+  overflow: scroll;
+}

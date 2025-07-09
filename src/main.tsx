@@ -8,6 +8,7 @@ import Navbar from "./components/Shared/Navbar";
 import Footer from "./components/Shared/Footer";
 import GoToTopBtn from "./components/Shared/GoToTopBtn";
 import ProductPage from "./pages/ProductPage";
+import ProductsList from "./pages/ProductsList";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/product-list/" element={<ProductsList />} />
       </Routes>
       <Footer />
       <GoToTopBtn />
