@@ -1,0 +1,81 @@
+.price-range-container {
+  width: 80%;
+  margin: 0;
+  padding: 10px;
+}
+
+.price-inputs {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.price-input {
+  flex: 1;
+}
+
+.price-input label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.price-input input {
+  width: 50%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.price-input input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.slider-container {
+  position: relative;
+  height: 28px;
+  background: rgb(61, 61, 61, 0.2);
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.slider-track {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  background: rgb(238, 180, 73);
+}
+
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid rgb(238, 180, 73);
+  border-radius: 50%;
+  cursor: grab;
+  transition: all 0.2s;
+}
+
+.slider-handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.slider-handle.dragging {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #6b7280;
+}
