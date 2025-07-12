@@ -1,4 +1,25 @@
 .filter-div {
   width: 20%;
   height: 1100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-right: 2px solid rgb(88, 88, 88);
+  overflow: scroll;
+}
+
+.show-results-btn {
+  all: unset;
+  background: rgb(61, 61, 61, 0.2);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: large;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 0.2rem;
+}
+
+.show-results-btn:hover {
+  background: rgb(61, 61, 61, 0.1);
 }

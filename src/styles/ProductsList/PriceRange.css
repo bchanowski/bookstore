@@ -79,3 +79,10 @@
   font-size: 12px;
   color: #6b7280;
 }
+
+.range-title {
+  font-size: large;
+  margin: 0;
+  margin-top: 1rem;
+  font-weight: 700;
+}

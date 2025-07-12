@@ -67,6 +67,7 @@ const PriceRange: React.FC<PriceRangeI> = ({
 
   return (
     <>
+      <p className="range-title">Price Range:</p>
       <div className="price-range-container">
         <div className="price-inputs">
           <div className="price-input">

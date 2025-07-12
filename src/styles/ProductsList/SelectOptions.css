@@ -1,0 +1,28 @@
+.checkbox-div {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background: rgb(61, 61, 61, 0.2);
+  width: 50%;
+  align-items: center;
+}
+
+.checkbox-text {
+  margin: 0.2rem;
+  font-size: medium;
+}
+
+.checkbox-title {
+  font-size: large;
+  font-weight: 700;
+}
+
+.showmore-option-btn {
+  all: unset;
+  color: rgb(73, 73, 73);
+  cursor: pointer;
+}
+
+.showmore-option-btn:hover {
+  color: rgb(14, 13, 13);
+}

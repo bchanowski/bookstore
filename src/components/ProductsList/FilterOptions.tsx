@@ -6,11 +6,24 @@ import SortBy from "./SortBy";
 
 const FilterOptions = () => {
   const availability_options = ["Tommorow", "2 Days", "Week", "Month"];
+  const categories = [
+    "Fantasy",
+    "Historical",
+    "Romance",
+    "Biography",
+    "War",
+    "Drama",
+    "Crime",
+    "Political",
+    "Educational",
+    "Self-Improvment",
+    "Sport",
+  ];
   return (
     <div className="filter-div">
       <SortBy />
-      <p>category</p>
-      <SelectOptions options={availability_options} />
+      <SelectOptions title="Categories" options={categories} />
+      <SelectOptions title="Availability" options={availability_options} />
       <PriceRange
         min={0}
         max={1000}
@@ -20,7 +33,7 @@ const FilterOptions = () => {
         currency="€"
       />
       <FilterRating />
-      <button>show results</button>
+      <button className="show-results-btn">show results</button>
     </div>
   );
 };
