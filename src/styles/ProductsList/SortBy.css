@@ -1,0 +1,11 @@
+.sort-title {
+  font-size: large;
+  font-weight: 700;
+}
+
+.sort-select {
+  border: none;
+  background: rgb(61, 61, 61, 0.2);
+  font-size: medium;
+  padding: 10px;
+}

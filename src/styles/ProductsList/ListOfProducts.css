@@ -1,7 +1,32 @@
 .products-list-div {
   display: flex;
+  width: calc(100% - 450px);
   flex-wrap: wrap;
   height: 1100px;
-  width: 80%;
   overflow: scroll;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .products-list-div {
+    width: calc(100% - 350px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .products-list-div {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products-list-div {
+    width: calc(100% - 250px);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .products-list-div {
+    width: 100svw;
+  }
 }

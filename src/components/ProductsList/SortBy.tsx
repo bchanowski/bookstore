@@ -1,3 +1,5 @@
+import "../../styles/ProductsList/SortBy.css";
+
 const SortBy = () => {
   const options = [
     "Popularity",
@@ -8,8 +10,8 @@ const SortBy = () => {
   ];
   return (
     <div>
-      <p>Sort By:</p>
-      <select>
+      <p className="sort-title">Sort By:</p>
+      <select className="sort-select">
         {options.map((option, index) => (
           <option key={index}>{option}</option>
         ))}

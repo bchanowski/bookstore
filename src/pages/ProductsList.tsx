@@ -3,7 +3,7 @@ import ListOfProducts from "../components/ProductsList/ListOfProducts";
 
 const ProductsList = () => {
   return (
-    <div style={{ display: `flex` }}>
+    <div style={{ display: `flex`, flexWrap: `wrap` }}>
       <FilterOptions />
       <ListOfProducts />
     </div>

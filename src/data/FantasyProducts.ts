@@ -6,7 +6,7 @@ const fantasyProducts: IProduct[] = [
     name: "East of Eden",
     desc: "",
     author: "John Steinbeck",
-    imageUrl: "https://ecsmedia.pl/c/east-of-eden-b-iext159385694.jpg",
+    imageUrl: "https://libris.to/media/jacket/04027019o.jpg",
     price: 29.99,
     rating: "3.2",
   },
@@ -76,7 +76,7 @@ const fantasyProducts: IProduct[] = [
     desc: "",
     author: "Andrzej Sapkowski",
     imageUrl:
-      "https://ecsmedia.pl/c/the-witcher-sword-of-destiny-b-iext156995699.jpg",
+      "https://cdn.swiatksiazki.pl/media/catalog/product/1/3/1399906997013-1.jpg?width=650&height=650&store=default&image-type=small_image",
     price: 32.99,
     rating: "4.4",
   },

@@ -9,3 +9,15 @@
   width: 50%;
   padding: 5px;
 }
+
+@media screen and (max-width: 1500px) {
+  .rating-filter-div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .rating-filter-div {
+    width: 50svw;
+  }
+}

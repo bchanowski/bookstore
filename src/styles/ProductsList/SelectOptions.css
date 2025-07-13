@@ -26,3 +26,15 @@
 .showmore-option-btn:hover {
   color: rgb(14, 13, 13);
 }
+
+@media screen and (max-width: 1500px) {
+  .checkbox-div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .checkbox-div {
+    width: 50svw;
+  }
+}
