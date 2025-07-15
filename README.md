@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# BookStore Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend only project that's goal is to show a concept of a book store website using React. The app was created using Vite and also uses react icons, react leaflet for maps and react router as well as some images from the web. The app was made striclty for educational purpsoes and to showcase my skills as developer.
 
-Currently, two official plugins are available:
+I'm planning on hosting the website soon but here's some screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Main Page
 
-## Expanding the ESLint configuration
+<img width="680" height="559" alt="image" src="https://github.com/user-attachments/assets/2c86ae31-da7b-4a38-a4c6-9dc3754af997" />
+<img width="681" height="511" alt="image" src="https://github.com/user-attachments/assets/131cd403-70e4-42e0-b2a4-0c96c6514e09" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Product Page
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+<img width="681" height="392" alt="image" src="https://github.com/user-attachments/assets/d45fd784-d68c-4686-a5f2-15221a14d384" />
+<img width="672" height="386" alt="image" src="https://github.com/user-attachments/assets/e6156c3a-6677-489a-8783-69fd4c01fe10" />
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Products List
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<img width="682" height="462" alt="image" src="https://github.com/user-attachments/assets/a817b909-b248-48b8-8849-0e020212a333" />
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+The page is also full responsive to different screen sizes
+
+<img width="573" height="765" alt="image" src="https://github.com/user-attachments/assets/8d560cb5-e3e8-4a8f-afa8-a4179946c577" />
+<img width="575" height="764" alt="image" src="https://github.com/user-attachments/assets/4450db19-4ec1-4442-9d79-765380435ee0" />
+<img width="750" height="841" alt="image" src="https://github.com/user-attachments/assets/1928a2da-77d9-47cf-8265-f9147a17d1f1" />
+<img width="747" height="774" alt="image" src="https://github.com/user-attachments/assets/c1c27dc4-2ced-4ad7-ba9e-2667ac686d28" />
+<img width="724" height="738" alt="image" src="https://github.com/user-attachments/assets/d4ed0a42-3512-4af2-97ed-6dbd0388d688" />
