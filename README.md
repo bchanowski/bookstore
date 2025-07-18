@@ -2,7 +2,7 @@
 
 This is a frontend only project that's goal is to show a concept of a book store website using React. The app was created using Vite and also uses react icons, react leaflet for maps and react router as well as some images from the web. The app was made striclty for educational purpsoes and to showcase my skills as developer.
 
-I'm planning on hosting the website soon but here's some screenshots
+You can check the website yourself here - https://bookstorets.bartosz-chanowski.workers.dev/ (to go to product page click any of the products in slider, to go to products list click categories)
 
 ### Main Page
 
