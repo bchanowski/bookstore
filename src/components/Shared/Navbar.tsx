@@ -1,7 +1,7 @@
 import "../../styles/Shared/Navbar.css";
 import SearchBar from "../Shared/SearchBar";
 import { PiBookOpenUserBold } from "react-icons/pi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import NavbarItems from "./NavbarItems";
 import { useNavigate } from "react-router";
@@ -10,15 +10,21 @@ const Navbar = () => {
   const [mobile, setMobile] = useState(true);
   const navigate = useNavigate();
 
-  const isMobile = () => {
-    if (window.innerWidth <= 1200) {
-      setMobile(false);
-    } else {
-      setMobile(true);
-    }
-  };
+  useEffect(() => {
+    const isMobile = () => {
+      if (window.innerWidth <= 1200) {
+        setMobile(false);
+      } else {
+        setMobile(true);
+      }
+    };
+    isMobile();
+    window.addEventListener("resize", isMobile);
+    return () => {
+      document.removeEventListener("resize", isMobile);
+    };
+  }, []);
 
-  window.addEventListener("resize", isMobile);
   return (
     <div className="nav-div">
       <div className="logo-text-div">
