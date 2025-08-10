@@ -11,12 +11,31 @@ body {
   );
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+body {
+  --sb-track-color: #1d1d1d;
+  --sb-thumb-color: #565656;
+  --sb-size: 12px;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  --sb-track-color: #1d1d1d;
+  --sb-thumb-color: #565656;
+  --sb-size: 12px;
+  width: var(--sb-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 2px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
