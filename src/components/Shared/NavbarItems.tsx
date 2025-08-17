@@ -6,7 +6,13 @@ const NavbarItems = () => {
   const navigate = useNavigate();
   return (
     <>
-      <p className="nav-text" onClick={() => navigate("/product-list")}>
+      <p
+        className="nav-text"
+        onClick={() => {
+          navigate("/product-list");
+          navigate(0);
+        }}
+      >
         Categories
       </p>
       <div className="vertical-line"></div>
